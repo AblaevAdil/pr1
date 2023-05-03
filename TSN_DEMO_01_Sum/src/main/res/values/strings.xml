@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sum</string>
+    <string name="b">B=</string>
+    <string name="sum">Результат</string>
+    <string name="button_name">Введите цифры и нажмите кнопку</string>
+    <string name="a">A=</string>
+    <string name="logo">logo</string>
+    <string name="c">C=</string>
+    <string name="d">D=</string>
+    <string name="x">X=</string>
+    <string name="lab">lab</string>
+</resources>

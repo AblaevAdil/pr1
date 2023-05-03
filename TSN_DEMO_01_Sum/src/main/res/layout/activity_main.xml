@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Будет линейная компоновка элементов, окно на весь экран,
+     компоненты должны располагаться вертикально и по-центру экрана -->
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#353535"
+    android:stretchColumns="*">
+
+    <TableRow>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="157dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_span="6"
+            android:contentDescription="@string/lab"
+            app:srcCompat="@drawable/lab1" />
+        </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textViewA"
+            android:layout_width="81dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_span="1"
+            android:layout_marginLeft="20dp"
+            android:gravity="end"
+            android:text="@string/a"
+            android:textColor="@color/lightgrey" />
+
+        <EditText
+            android:id="@+id/editText_a"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/a"
+            android:inputType="numberSigned"
+            android:textAllCaps="false"
+            android:textColor="@color/lightgrey"
+            android:textColorHint="#9E9E9E" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textViewB"
+            android:layout_width="67dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_span="1"
+            android:gravity="end"
+            android:text="@string/b"
+            android:textColor="@color/lightgrey" />
+
+        <EditText
+            android:id="@+id/editText_b"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/b"
+            android:inputType="numberSigned"
+            android:textAllCaps="false"
+            android:textColor="@color/lightgrey"
+            android:textColorHint="#9E9E9E"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textViewC"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:layout_marginLeft="20dp"
+            android:text="@string/c"
+            android:textColor="@color/lightgrey" />
+
+        <EditText
+            android:id="@+id/editText_c"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/c"
+            android:inputType="numberSigned"
+            android:textAllCaps="false"
+            android:textColor="@color/lightgrey"
+            android:textColorHint="#9E9E9E"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textViewD"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:layout_marginLeft="20dp"
+            android:text="@string/d"
+            android:textColor="@color/lightgrey" />
+
+        <EditText
+            android:id="@+id/editText_d"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/d"
+            android:inputType="numberSigned"
+            android:textAllCaps="false"
+            android:textColor="@color/lightgrey"
+            android:textColorHint="#9E9E9E"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textViewX"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:gravity="end"
+            android:text="@string/x"
+            android:textColor="@color/lightgrey" />
+
+        <EditText
+            android:id="@+id/editText_x"
+            android:layout_width="256dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:autofillHints="no"
+            android:ems="10"
+            android:hint="@string/x"
+            android:inputType="numberSigned"
+            android:textColor="@color/lightgrey"
+            android:textColorHint="@color/grey"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView_sum"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_span="6"
+            android:gravity="center"
+            android:text="@string/button_name"
+            android:textColor="@color/lightgrey" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/buttonSum"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_span="6"
+            android:layout_margin="5dp"
+            android:background="#F5A011"
+            android:onClick="onClick"
+            android:text="@string/sum"
+            android:textColor="#37474F" />
+    </TableRow>
+
+
+</TableLayout>
